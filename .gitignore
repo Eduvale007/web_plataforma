@@ -1,0 +1,36 @@
+# Ignora o ambiente virtual
+venv/
+
+# Ignora ambientes virtuais comuns
+venv/
+env/
+.env/
+
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Pytest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Distribuição
+build/
+dist/
+*.egg-info/
