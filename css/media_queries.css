@@ -1,0 +1,243 @@
+
+/*RESPONSIBLITY */
+@media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .start-btn {
+      display: none;
+    }
+    .mobile-menu {
+      position: absolute;
+      right: 20px;
+    }
+    .nav-list {
+      position: absolute;
+      top: 53px;
+      margin: 0;
+      right: 0;
+      width: 50vw;
+      background: rgba(0, 0, 0, 0.9);
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+     li {
+      margin: 0;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      
+    }
+    .nav-list a:not(.teste) {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .teste{
+      background-color: #dd0370;
+      padding: 20px;
+      text-align: center;
+      margin: 0;
+    }
+
+   .ttt{
+      padding:0;
+      margin: 0;
+   }
+  
+    
+    .nav-list li::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(255, 0, 127);
+      opacity: 0.5; /* Ajuste a opacidade conforme necessário */
+    }
+
+    
+    .mobile-menu {
+      display: block;
+    }
+    .nav-list.active {
+      transform: translateX(0);
+    }
+  
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    .mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px)
+    }
+    .mobile-menu.active .line2 {
+      opacity: 0;
+    }
+    .mobile-menu.active .line3 {
+      transform: rotate(45deg) translate(-5px, -7px)
+    }
+  
+    .cta-btn-menu {
+      background: #dd0370;
+      color: #fff;
+      border: none;
+      padding: 9px 49px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      border-radius: 0;
+      height: 44px;
+    }
+  
+    .button-li {
+      padding: 0;
+      border: none;
+    }
+  }
+  
+  @media (max-width: 1200px){
+
+    .parent{
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr);
+      gap: 20px;
+    }
+    
+    .image_test{
+     width: 400px;
+      height: 300px;
+    }
+
+    .teste{
+      display: none;
+    }
+  }
+  
+  
+  
+  @media (max-width: 750px){
+  
+    .features{
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    
+  .feature-card {
+    width: 100%;
+        padding: 20px;
+  }
+  
+  .cards__price{
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .parent{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+  }
+  
+  .image_test{
+   width: 300px;
+    height: 200px;
+  }
+
+  }
+  
+  
+  @media (min-width: 1000px) {
+
+    .teste{
+      display: none;
+    }
+    .ttt{
+      display: none;
+    }
+    .button-li {
+      display: none;
+    }
+    .nav-list a {
+      text-decoration: none; /* Remova qualquer linha padrão */
+      color: #fff; /* Garanta que o texto seja branco */
+      padding: 5px 10px; /* Ajuste para visualização */
+      position: relative; /* Necessário para os ::after funcionarem */
+    }
+    
+    .nav-list a::after {
+      content: '';
+      display: block;
+      width: 0; /* Largura inicial */
+      height: 3px; /* Espessura da linha */
+      background: var(--primary-color); /* Cor da linha */
+      transition: width 0.3s; /* Animação */
+      position: absolute; /* Para posicionar em relação ao link */
+      bottom: 0; /* Alinha no final do link */
+      left: 0; /* Começa do lado esquerdo */
+    }
+    
+    .nav-list a:hover::after {
+      width: 100%; /* A linha se estende pela largura do link ao passar o mouse */
+    }
+   /* From Uiverse.io by KeylaSUE */ 
+  
+  /* Barra de progresso */
+  .progress-loader {
+    position: fixed;
+    top: 8%;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Altura da barra */
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo */
+    z-index: 10;
+  }
+  
+  .progress {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, var(--quaternary-color), var(--primary-color));
+    transition: width 0.1s ease-out;
+  }
+  
+  
+  
+  @keyframes loading1274 {
+    0% {
+      width: 0%;
+    }
+  
+    10% {
+      width: 10%;
+    }
+  
+    50% {
+      width: 40%;
+    }
+  
+    60% {
+      width: 60%;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+   
+  }
