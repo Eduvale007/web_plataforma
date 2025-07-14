@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Criativo</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='header.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='footer.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='media_queries.css')}}" />
+  </head>
+  <body>
+    <header class="navbar" id="header">
+      <nav class="navbar">
+        <h1 class="title__logo">WebFast</h1>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="{{url_for('home')}}">Home</a></li>
+          <li><a href="{{url_for('catalogo')}}">Catálogo</a></li>
+          <li><a href="{{url_for('sobre')}}">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li class="ttt"><a class="teste" href="login.html">Login</a></li>
+          <!--<li class="button-li"> <button class="cta-btn-menu">Login</button></li> -->
+        </ul>
+        <button class="start-btn" id="openFormBtn">Login</button>
+      </nav>
+      <div class="progress-loader">
+        <div class="progress" id="progress"></div>
+      </div>
+    </header>
+    
+
+    <section>
+      <div class="hero">
+        <h1>Transforme Sua Ideia Em Um Website Incrível</h1>
+        <p>Transforme suas ideas com modernidade, designs creativos.</p>
+        <button class="cta-btn">Comece Agora</button>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h2>Home</h2>
+        <p>Explore ideas criativas e designs para seu website.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Sobre nós</h2>
+        <p>Saíba mais sobre nosso time e processo</p>
+      </div>
+      <div class="feature-card">
+        <h2>Contato</h2>
+        <p>Aperte uma vez para começar seu projeto hoje</p>
+      </div>
+    </section>
+
+    <section class="titles__add">
+      <button class="title__projects">Nossos layouts</button>
+    </section>
+
+    <section class="projects__images">
+      <div class="parent">
+        <div class="card">
+          <div class="image"></div>
+          <div class="content">
+            <span class="card__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae dolores, possimus pariatur animi temporibus nesciunt
+              praesentium
+            </p>
+
+            <a class="action" href="lay.html">
+              Saiba mais
+              <span aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image"></div>
+          <div class="content">
+            <span class="card__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae dolores, possimus pariatur animi temporibus nesciunt
+              praesentium
+            </p>
+
+            <a class="action" href="lay.html">
+              Saiba mais
+              <span aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image"></div>
+          <div class="content">
+            <span class="card__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae dolores, possimus pariatur animi temporibus nesciunt
+              praesentium
+            </p>
+
+            <a class="action" href="lay.html">
+              Saiba mais
+              <span aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image"></div>
+          <div class="content">
+            <span class="card__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </span>
+
+            <p class="desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae dolores, possimus pariatur animi temporibus nesciunt
+              praesentium
+            </p>
+
+            <a class="action" href="#">
+              Saiba mais
+              <span aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards__price_title">
+      <button class="btn">Assinaturas</button>
+    </section>
+
+    <section class="cards__price">
+      <div class="card__price">
+        <span class="title"
+          >Plano Básico
+          <p class="pricing">$20 <span class="pricing-time">/ mês</span></p>
+          <span class="sub-title"
+            >Tudo no plano Básico:
+            <ul class="list">
+              <li class="list-item"><span class="check">✓</span> Layouts simples e prontos para uso.</li>
+              <li class="list-item"><span class="check">✓</span> Sem personalizações ou funcionalidades extras.</li>
+              <li class="list-item"><span class="check">✓</span> Acesso limitado a novos layouts.</li>
+              <li class="list-item"><span class="check">✓</span>  Suporte básico por e-mail para dúvidas gerais</li>
+            </ul>
+            <button class="button">
+              <span class="text-button">Assine já</span>
+            </button>
+          </span></span
+        >
+      </div>
+
+      <div class="card__price">
+        <span class="title"
+          >Plano Pro
+          <p class="pricing">$30 <span class="pricing-time">/ mês</span></p>
+          <span class="sub-title"
+            >Tudo no plano Pro:
+            <ul class="list">
+              <li class="list-item"><span class="check">✓</span> Layouts mais complexos e modernos.</li>
+              <li class="list-item"><span class="check">✓</span> Opção para pequenas personalizações (cores, fontes, etc).</li>
+              <li class="list-item"><span class="check">✓</span> Suporte via e-mail.</li>
+              <li class="list-item"><span class="check">✓</span> Acesso a novos layouts e atualizações frequentes.</li>
+
+            </ul>
+            <button class="button">
+              <span class="text-button">Assine já</span>
+            </button>
+          </span></span
+        >
+      </div>
+
+      <div class="card__price">
+        <span class="title"
+          >Plano Premium
+          <p class="pricing">$60 <span class="pricing-time">/ mês</span></p>
+          <span class="sub-title"
+            >Tudo no plano:
+            <ul class="list">
+              <li class="list-item"><span class="check">✓</span> Layouts exclusivos e premium.</li>
+              <li class="list-item"><span class="check">✓</span> Layouts personalizáveis sob demanda.</li>
+              <li class="list-item"><span class="check">✓</span> Suporte prioritário (chat ou vídeo).</li>
+              <li class="list-item"><span class="check">✓</span> Descontos em compras de layouts avulsos.</li>
+            </ul>
+            <button class="button">
+              <span class="text-button">Assine já</span>
+            </button>
+          </span></span
+        >
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2024 Website Criativo. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+  <script src="{{url_for('static', filename='mobile-navbar.js')}}">
+  </script>
+  <script src="{{url_for('static', filename='progress-bar.js')}}"></script>
+</html>
