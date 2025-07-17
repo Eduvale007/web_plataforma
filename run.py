@@ -1,24 +1,12 @@
-from flask import Flask, render_template
-
+from flask import Flask
+from config import get_connection
+from routes import paginas
 
 app = Flask(__name__)
 
+conn = get_connection()
 
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-
-
-@app.route('/sobre')
-def sobre():
-    return render_template('about.html')
-
-
-@app.route('/catalogo')
-def catalogo():
-    return render_template('lay.html')
-
+app.register_blueprint(paginas)
 
 
 if __name__ == '__main__':
