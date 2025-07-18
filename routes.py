@@ -8,3 +8,9 @@ paginas = Blueprint('paginas', __name__)
 def home():
     return render_template('index.html')
 
+
+
+@paginas.route('/catalogo')
+def catalogo():
+    return render_template('catalogo.html')
+
