@@ -1,7 +1,7 @@
 window.addEventListener('scroll', () => {
     const progress = document.getElementById('progress');
     const header = document.getElementById('header');
-    const titleProjects = document.querySelector('.title__projects');
+    const titleProjects = document.getElementById('introduction');
   
     // Retângulo de posição do elemento titleProjects
     const titleRect = titleProjects.getBoundingClientRect();

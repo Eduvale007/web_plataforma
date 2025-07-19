@@ -4,7 +4,7 @@
             background: #16213e;
             padding: 15px 0;
             border-bottom: 1px solid #2a2a5e;
-            position: fixed;
+            position: sticky;
             z-index: 2;
             top: 0;
         }
