@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Criativo</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/header.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/cards_lay.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/catalogo.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/media_queries.css')}}" />
+  </head>
+  <body>
+
+
+
+     <header class="header" id="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="./static/webfast-logo-white.png" alt="WebFast">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar templates...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <nav class="nav-links">
+                <a href="#" id="cart-link">🛒 Carrinho</a>
+                <a href="#" id="account-link">👤 Conta</a>
+                <a href="{{url_for('paginas.catalogo')}}" id="dashboard-link">📊 Catálogo</a>
+            </nav>
+        </div>
+        
+  <div class="progress-loader">
+      <div class="progress" id="progress"></div>
+  </div>
+          
+         
+    </header>
