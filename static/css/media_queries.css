@@ -201,7 +201,7 @@
   /* Barra de progresso */
   .progress-loader {
     position: fixed;
-    top: 13%;
+    top: 7%;
     left: 0;
     width: 100%;
     height: 4px; /* Altura da barra */

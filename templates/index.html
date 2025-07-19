@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Criativo</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
     <link rel="stylesheet" href="{{url_for('static', filename='css/header.css')}}" />
       <link rel="stylesheet" href="{{url_for('static', filename='css/cards_lay.css')}}" />
     <link rel="stylesheet" href="{{url_for('static', filename='css/footer.css')}}" />
@@ -28,18 +28,15 @@
                 <a href="#" id="account-link">👤 Conta</a>
                 <a href="{{url_for('paginas.catalogo')}}" id="dashboard-link">📊 Catálogo</a>
             </nav>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
-        <div class="progress-loader">
-            <div class="progress" id="progress"></div>
-        </div>
+        
+  <div class="progress-loader">
+      <div class="progress" id="progress"></div>
+  </div>
+          
+         
     </header>
  
-
 
 
     <section>
@@ -293,7 +290,7 @@
       <p>© 2024 Website Criativo. Todos os direitos reservados.</p>
     </footer>
   </body>
-  <script src="{{url_for('static', filename='mobile-navbar.js')}}">
+  <script src="{{url_for('static', filename='js/mobile-navbar.js')}}">
   </script>
-  <script src="{{url_for('static', filename='progress-bar.js')}}"></script>
+  <script src="{{url_for('static', filename='js/progress-bar.js')}}"></script>
 </html>
